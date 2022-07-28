@@ -75,11 +75,14 @@
                 </button>
                 <!-- fetured test area -->
                 <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
-                    <h1 class="fs-1 fw-bolder">Get Started Digital Learning</h1>
+                    <h1 class="fs-2 fw-bolder">Get Started Digital Learning</h1>
                     <!-- this paragroup will hide in small device -->
-                    <p class="d-none d-md-block d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <p class="">
+                        <!-- d-none d-md-block d-lg-block -->
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Architecto harum laboriosam ducimus
-                        necessitatibus corporis pariatur!</p>
+                        necessitatibus corporis pariatur!
+                    </p>
                     <button class="btn rounded-2 px-4 bg-info text-white fw-bold">Get Started</button>
                 </div>
                 <!-- fetured test area end-->
@@ -168,7 +171,7 @@
                 </div>
             </div>
         </div>
-    <!-- course section end -->
+        <!-- course section end -->
         <!-- view all button -->
         <div class="text-center mb-4">
             <button class="btn bg-info text-white fw-bold">See More Courses</button>
@@ -182,7 +185,8 @@
                 <div class="col d-flex align-items-center">
                     <div>
                         <h2 class="fw-bolder">Explore The elearning Institute</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed eligendi quaerat corporis! Eum accusantium saepe consequatur quam neque facilis debitis?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed eligendi quaerat corporis! Eum
+                            accusantium saepe consequatur quam neque facilis debitis?</p>
                         <!-- analytics number -->
                         <div class="d-flex">
                             <div>
@@ -202,22 +206,57 @@
                         <button class="btn my-3 rounded-2 bg-info fw-bold text-white">Read More</button>
                     </div>
                 </div>
-              </div>
-        </section>
-    <!-- explore section end optional -->
-    <!-- ask for join with modal -->
-    <div class="container bg-info rounded-1 p-5 my-5">
-        <div class="align-items-center row row-cols-lg-2 text-center text-lg-start">
-            <div>
-                <h2>Ready to join?</h2>
-                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
             </div>
-            <!-- i can use button here. but made button with div for onClick activity safety (anchore link not work. untill click text) -->
-            <div class="d-flex justify-content-center justify-content-lg-end">
-                <div class="btn bg-white text-info fw-bold rounded-2 mx-5 text-end">Register Now</div>
+        </section>
+        <!-- explore section end optional -->
+        <!-- ask for join with modal -->
+        <div class="container bg-info rounded-1 p-5 my-5">
+            <div class="align-items-center row row-cols-lg-2 text-center text-lg-start">
+                <div>
+                    <h2>Ready to join?</h2>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                        when looking at its layout.</p>
+                </div>
+                <!-- i can use button here. but made button with div for onClick activity safety (anchore link not work. untill click text) -->
+                <div class="d-flex justify-content-center justify-content-lg-end">
+                    <button class="btn bg-white text-info fw-bold rounded-2 mx-5 text-end" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal" data-bs-whatever="@mdo">Register Now</button>
+                </div>
             </div>
         </div>
-    </div>
+        <!-- resister modal design. normally invisible content -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                            Register and Get Full access
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Full Name:</label>
+                                <input type="text" class="form-control" id="recipient-name" />
+                            </div>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Email Address:</label>
+                                <input type="email" class="form-control" id="recipient-name" />
+                            </div>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Password:</label>
+                                <input type="password" class="form-control" id="recipient-name" />
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer flex-column justify-content-center">
+                        <button type="button" class="btn btn-primary">Register</button>
+                        <small>Already hve an account? <a href="#">Login</a></small>
+                    </div>
+                </div>
+            </div>
+            <!-- register modal end  -->
 
     </main>
 
